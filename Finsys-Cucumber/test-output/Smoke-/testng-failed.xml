@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Smoke-]">
+  <parameter name="owner" value="abhi"/>
+  <parameter name="a1" value="10"/>
+  <parameter name="Project" value="Finsys-Cucumber"/>
+  <parameter name="a2" value="15"/>
+  <parameter name="e" value="10"/>
+  <parameter name="f" value="5"/>
+  <parameter name="g" value="10"/>
+  <parameter name="h" value="2"/>
+  <parameter name="tcid" value="tc12"/>
+  <parameter name="s1" value="15"/>
+  <parameter name="s2" value="10"/>
+  <test name="Verify addition and subtraction of 2 numbers(failed)">
+    <parameter name="a1" value="10"/>
+    <parameter name="a2" value="15"/>
+    <parameter name="e" value="10"/>
+    <parameter name="f" value="5"/>
+    <parameter name="g" value="10"/>
+    <parameter name="h" value="2"/>
+    <parameter name="tcid" value="tc12"/>
+    <parameter name="s1" value="15"/>
+    <parameter name="s2" value="10"/>
+    <classes>
+      <class name="Temp.MathA">
+        <methods>
+          <include name="Division" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Temp.MathA -->
+    </classes>
+  </test> <!-- Verify addition and subtraction of 2 numbers(failed) -->
+</suite> <!-- Failed suite [Smoke-] -->

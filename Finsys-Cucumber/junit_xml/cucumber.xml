@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="2.492147">
+<testcase classname="CreateCompany feature" name="Create a new Company for user having role of BEO" time="1.597112">
+<system-out><![CDATA[When user launch the "firefox" browser......................................passed
+And user enters the url "http://localhost:90/finsys"........................passed
+Then user enter "dummyfm" as enter username.................................passed
+Then user enter  "passw0rd" as password.....................................passed
+And user clicks on login button.............................................passed
+When user expand create new company left hand side accordian pane...........passed
+And user click on New company option which is at the Top....................passed
+And user get the New Create company page details............................passed
+And user enter company name "Ubuntu"........................................passed
+And user enter company Address "Hinjewadi phase 2"..........................passed
+And user enter Company contact Number "020-258978964".......................passed
+When user enters all mandatory and required fields..........................passed
+Then user click on save button..............................................passed
+And user gets the message starting with "Company Created Successfully"......passed
+And user click on search button.............................................passed
+Then user on the search page................................................passed
+And user enter newly created user detail in search bar and click on search button.passed
+Then user is on the search page with new created company....................passed
+]]></system-out>
+</testcase>
+<testcase classname="CreateCompany feature" name="Create a new company by passing some invalid data" time="0.293758">
+<system-out><![CDATA[When user launch the "firefox" browser......................................passed
+And user enters the url "http://localhost:90/finsys"........................passed
+Then user enter "dummyfm" as enter username.................................passed
+Then user enter  "passw0rd" as password.....................................passed
+And user clicks on login button.............................................passed
+When user expand create new company left hand side accordian pane...........passed
+And user click on New company option which is at the Top....................passed
+And user get the New Create company page details............................passed
+And user enter company Name "Tesla".........................................passed
+And user enter company Address "Hinjewadi phase 3"..........................passed
+And user enter Company contact Number "020-258978965ab".....................passed
+And user enter Comoany email id "xyz@outlook.com"...........................passed
+When user enters all mandatory and required fields..........................passed
+Then Update the company information with the new one and click on Save button.passed
+When user enter some wrong detail in mandatory fields.......................passed
+Then user get the message starting with "Contact number must be Digits".....passed
+And user refill the mandatory and required fields...........................passed
+Then user click on save button..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="CreateCompany feature" name="Create a company by passing already existing comapny name &amp; detail" time="0.275355">
+<system-out><![CDATA[When user launch the "firefox" browser......................................passed
+And user enters the url "http://localhost:90/finsys"........................passed
+Then user enter "dummyfm" as enter username.................................passed
+Then user enter  "passw0rd" as password.....................................passed
+And user clicks on login button.............................................passed
+When user expand create new company left hand side accordian pane...........passed
+And user click on New company option which is at the Top....................passed
+And user get the New Create company page details............................passed
+And user enter company Name "Tesla".........................................passed
+And user enter company Address "Hinjewadi phase 3"..........................passed
+And user enter Company contact Number "020-258978965".......................passed
+And user enter Comoany email id "xyz@outlook.com"...........................passed
+When user enters all mandatory and required fields..........................passed
+Then user click on save button..............................................passed
+Then user get the message starting with "Company name already Exist"........passed
+]]></system-out>
+</testcase>
+<testcase classname="CreateCompany feature" name="Update company Address which is already Existed company name with &quot;XYZ company&quot;" time="0.325922">
+<system-out><![CDATA[When user launch the "firefox" browser......................................passed
+And user enters the url "http://localhost:90/finsys"........................passed
+Then user enter "dummyfm" as enter username.................................passed
+Then user enter  "passw0rd" as password.....................................passed
+And user clicks on login button.............................................passed
+And user click on search option with Accurate company name..................passed
+And user select company which he is he want to update Company address.......passed
+And user click on update option.............................................passed
+When user enter new company address "Nanded City,Tower No.02,Pune"..........passed
+Then user click on update button............................................passed
+Then user get the message starting with "XYZ company Address Successfully updated".passed
+Then User click on search option............................................passed
+And user enter "XYZ company" in search bar..................................passed
+And user Select "XYZ company"...............................................passed
+Then user get XYZ company detail with updated one...........................passed
+]]></system-out>
+</testcase>
+</testsuite>

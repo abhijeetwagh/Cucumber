@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke-">
+	<parameter name="Project" value="Finsys-Cucumber"></parameter>
+	<parameter name="owner" value="abhi"></parameter>
+	<test name="Verify addition and subtraction of 2 numbers">
+		<parameter name="tcid" value="tc12"></parameter>
+		<parameter name="a1" value="10"></parameter>
+		<parameter name="a2" value="15"></parameter>
+		<parameter name="s1" value="15"></parameter>
+		<parameter name="s2" value="10"></parameter>
+		<parameter name="e" value="10"></parameter>
+		<parameter name="f" value="5"></parameter>
+		<parameter name="g" value="10"></parameter>
+		<parameter name="h" value="2"></parameter>
+		<classes>
+			<class name="Temp.MathB">
+			</class>
+			<class name="Temp.MathA">
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
